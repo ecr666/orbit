@@ -35,6 +35,7 @@
             <groupId>org.eclipse.paho</groupId>
             <artifactId>mqtt-client</artifactId>
             <version>${version.mqtt.paho}</version>
+            <optional>true</optional>
         </dependency>
     </dependencies>
 
@@ -61,8 +62,9 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Bundle-SymbolicName>${pom.artifactId}</Bundle-SymbolicName>
-                        <Bundle-Name>${pom.artifactId}</Bundle-Name>
+                        <Bundle-Vendor>WSO2 Inc</Bundle-Vendor>
+                        <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+                        <Bundle-Name>${project.artifactId}</Bundle-Name>
                         <Export-Package>
                             org.eclipse.paho.*; version="0.4.0",
                         </Export-Package>
